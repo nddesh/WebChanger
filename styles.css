@@ -1,0 +1,133 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+img {
+	max-width:100%;
+}
+
+/* ----- End of reset --- */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 1000px;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header p {
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 30px auto;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 80px auto;
+}
+
+input {
+  margin-bottom: 30px;
+  width: 500px;
+}
+
+iframe {
+  border: 1px solid #cccccc;
+  margin: 10px auto;
+}
+
+#toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  background-color: #e2e2e2;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#toolbar div {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+select {
+  width: 100px;
+  height: 30px;
+}
+
+label {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+input[type=color] {
+  width: 100px;
+  height: 50px;
+}
+
+input[type=text] {
+  width: 500px;
+  height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 218);
+}
+
+#designHead {
+  margin-bottom: 30px;
+}
+
+#design {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px #cccccc;
+  font-size: 16px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}

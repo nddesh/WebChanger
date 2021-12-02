@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Web Changer</title>
+</head>
+<body onload="init()">
+  <header>
+    <h1>Web Changer</h1>
+    <h2>How to use this tool</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nulla possimus suscipit vero amet! Eligendi vitae deleniti distinctio illum qui harum asperiores, ipsa fugit illo necessitatibus, inventore amet excepturi saepe.</p>
+  </header>
+
+  <hr/>
+
+  <h3 for="web">Enter web address</h3>
+  <input type="text" id="webLink" name="web" value="https://www.imdb.com/chart/top/?ref_=nv_mv_250">
+
+  <div id="display">
+    <h4>Design Toolbar</h4>
+    <div id="toolbar">
+      <div>
+        <label for="font">Font</label>
+        <select id="font" name="font" onchange="font()">
+          <option value="Arial, Helvetica, sans-serif">Arial</option>
+          <option value="'Times New Roman', Times, serif">Times New Roman</option>
+          <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Impact</option>
+          <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+          <option value="Georgia, 'Times New Roman', Times, serif">Georgia</option>
+        </select>
+      </div>
+      <div>
+        <label for="fontColor">Font Color</label>
+        <input type="color" id="color" name="color" onchange="fontColor()">
+      </div>
+      <div>
+        <label for="fill">Fill Color</label>
+        <input type="color" id="fill" name="fill" onchange="fill()">
+      </div>
+      <div>
+        <label for="textSize">Text Size</label>
+        <select id="textSize" name="textSize" onchange="size()">
+          <option value="12">12</option>
+          <option value="18">18</option>
+          <option value="24">24</option>
+          <option value="30">30</option>
+          <option value="36">36</option>
+        </select>
+      </div>
+      <div>
+        <label for="letterCase">Letter Case</label>
+        <select id="letterCase" name="letterCase" onchange="letterCase()">
+          <option value="none">Sentence-case</option>
+          <option value="uppercase">Uppercase</option>
+          <option value="lowercase">Lowercase</option>
+          <option value="capitalize">Capitalize words</option>
+        </select>
+      </div>
+    </div>
+    <button onclick="document.getElementById('yourDesign').src = document.getElementById('yourDesign').src">Make Changes</button>
+
+  <section>
+    <div>
+      <h2>Original Website</h2>
+      <p>Click on elements on this website to change them</p>
+      <iframe src="data.html" id="ogDesign" width="400px" height="600px"></iframe>
+    </div>
+
+    <hr>
+
+    <div id="design">
+      <h2 id="designHead">Your Design</h2>
+      <iframe src="data2.html" id="yourDesign" width="400px" height="600px"></iframe>
+      <button>Save Design</button>
+    </div>
+  </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
