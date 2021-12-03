@@ -11,7 +11,7 @@
   <header>
     <h1>Web Changer</h1>
     <h2>How to use this tool</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nulla possimus suscipit vero amet! Eligendi vitae deleniti distinctio illum qui harum asperiores, ipsa fugit illo necessitatibus, inventore amet excepturi saepe.</p>
+    <p>Using the controls in the 'Design Toolbar', you can manipulate the webpage displayed on the left and see your changes and designs on the right under 'Your Design'. This tool is intended to be a prototype for a more advanced styling-tester tool. Have fun!</p>
   </header>
 
   <hr/>
@@ -41,22 +41,21 @@
         <input type="color" id="fill" name="fill" onchange="fill()">
       </div>
       <div>
-        <label for="textSize">Text Size</label>
-        <select id="textSize" name="textSize" onchange="size()">
-          <option value="12">12</option>
-          <option value="18">18</option>
-          <option value="24">24</option>
-          <option value="30">30</option>
-          <option value="36">36</option>
+        <label for="style">Text Style</label>
+        <select id="style" name="style" onchange="tStyle()">
+          <option value="0">100</option>
+          <option value="300">300</option>
+          <option value="700">700</option>
+          <option value="900">900</option>
         </select>
       </div>
       <div>
-        <label for="letterCase">Letter Case</label>
-        <select id="letterCase" name="letterCase" onchange="letterCase()">
-          <option value="none">Sentence-case</option>
-          <option value="uppercase">Uppercase</option>
-          <option value="lowercase">Lowercase</option>
-          <option value="capitalize">Capitalize words</option>
+        <label for="decor">Text Decoration</label>
+        <select id="decor" name="decor" onchange="decor()">
+          <option value="none">None</option>
+          <option value="underline">Underline</option>
+          <option value="overline">Overline</option>
+          <option value="line-through">Line-through</option>
         </select>
       </div>
     </div>
@@ -66,18 +65,19 @@
     <div>
       <h2>Original Website</h2>
       <p>Click on elements on this website to change them</p>
-      <iframe src="data.html" id="ogDesign" width="400px" height="600px"></iframe>
+      <iframe src="data.html" id="ogDesign" width="500px" height="800px"></iframe>
     </div>
 
     <hr>
 
     <div id="design">
-      <h2 id="designHead">Your Design</h2>
-      <iframe src="data2.html" id="yourDesign" width="400px" height="600px"></iframe>
-      <button>Save Design</button>
+      <h2>Your Design</h2>
+      <p>See your changes here!</p>
+      <iframe src="data2.html" id="yourDesign" width="500px" height="800px"></iframe>
     </div>
   </div>
   </section>
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </body>
 </html>

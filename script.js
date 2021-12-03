@@ -1,22 +1,40 @@
-// THE CULPRITS
-
 var page = document.querySelector("#main");
-var highlight = document.getElementById("highlight");
+var page2 = document.querySelector(".article h3");
+var page3 = document.querySelector(".article h1");
+var page4 = document.querySelector("div .byline");
 // var frame = document.getElementById("yourDesign");
 
 function init() {
+    localStorage.clear();
     localStorage.setItem("font", '');
     localStorage.setItem("fColor", '');
     localStorage.setItem("fill", '');
-    localStorage.setItem("size", '');
-    localStorage.setItem("case", '');
+    localStorage.setItem("decor", '');
+    localStorage.setItem("style", '');
 }
 
+//Change page decorations
 page.style.fontFamily = localStorage.getItem("font");
+page2.style.fontFamily = localStorage.getItem("font");
+page3.style.fontFamily = localStorage.getItem("font");
+page4.style.fontFamily = localStorage.getItem("font");
+
 page.style.color = localStorage.getItem("fColor");
+page2.style.color = localStorage.getItem("fColor");
+page3.style.color = localStorage.getItem("fColor");
+page4.style.color = localStorage.getItem("fColor");
+
 page.style.backgroundColor = localStorage.getItem("fill");
-page.style.fontSize = localStorage.getItem("size");
-page.style.textTransform = localStorage.getItem("case");
+
+page.style.fontWeight = localStorage.getItem("style");
+page2.style.fontWeight = localStorage.getItem("style");
+page3.style.fontWeight = localStorage.getItem("style");
+page4.style.fontWeight = localStorage.getItem("style");
+
+page.style.textDecoration = localStorage.getItem("decor");
+page2.style.textDecoration = localStorage.getItem("decor");
+page3.style.textDecoration = localStorage.getItem("decor");
+page4.style.textDecoration = localStorage.getItem("decor");
 
 function font() {
     console.log(localStorage.getItem("font"));
@@ -25,7 +43,7 @@ function font() {
 
 function fontColor() {
     console.log(localStorage.getItem("fColor"));
-    localStorage.setItem("fColor", document.getElementById("fontColor").value);
+    localStorage.setItem("fColor", document.getElementById("color").value);
 }
 
 function fill() {
@@ -33,12 +51,12 @@ function fill() {
     localStorage.setItem("fill", document.getElementById("fill").value);
 }
 
-function size() {
-    console.log(localStorage.getItem("size"));
-    localStorage.setItem("size", document.getElementById("size").value);
+function tStyle() {
+    console.log('hi');
+    localStorage.setItem("style", document.getElementById("style").value);
 }
 
-function style() {
-    console.log(localStorage.getItem("case"));
-    localStorage.setItem("case", document.getElementById("letterCase").value);
+function decor() {
+    console.log(localStorage.getItem("decor"));
+    localStorage.setItem("decor", document.getElementById("decor").value);
 }
