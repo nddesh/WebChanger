@@ -18,7 +18,7 @@
   <hr/>
 
   <h3 for="web">Enter web address</h3>
-  <input type="text" id="webLink" name="web" value="https://www.imdb.com/chart/top/?ref_=nv_mv_250" style="pointer-events: none;">
+  <input type="text" id="webLink" name="web" value="https://www.imdb.com/chart/top/?ref_=nv_mv_250" style="pointer-events: none;" alt="enter web address">
 
   <div id="display">
     <h4>Design Toolbar</h4>
@@ -34,15 +34,15 @@
         </select>
       </div>
       <div>
-        <label for="fontColor">Font Color</label>
-        <input type="color" id="color" name="color" onchange="fontColor()">
+        <label for="fontColor" alt="Font Color Picker">Font Color</label>
+        <input type="color" id="color" name="color" alt="Font Color Picker" onchange="fontColor()">
       </div>
       <div>
-        <label for="fill">Fill Color</label>
+        <label for="fill" alt="Fill Color Picker">Fill Color</label>
         <input type="color" id="fill" name="fill" onchange="fill()">
       </div>
       <div>
-        <label for="style">Text Style</label>
+        <label for="style" alt="text style dropdown">Text Style</label>
         <select id="style" name="style" onchange="tStyle()">
           <option value="0">100</option>
           <option value="300">300</option>
@@ -51,7 +51,7 @@
         </select>
       </div>
       <div>
-        <label for="decor">Text Decoration</label>
+        <label for="decor" alt="text decoration dropdown">Text Decoration</label>
         <select id="decor" name="decor" onchange="decor()">
           <option value="none">None</option>
           <option value="underline">Underline</option>
