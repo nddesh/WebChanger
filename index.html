@@ -16,9 +16,10 @@
   </header>
 
   <hr/>
-
-  <label for="web" id="web">Enter web address</label><br>
-  <input type="text" id="webLink" name="web" value="https://www.imdb.com/chart/top/?ref_=nv_mv_250" style="pointer-events: none;" alt="enter web address">
+  <form>
+    <label for="web" id="web">Enter web address</label><br>
+    <input type="text" id="webLink" name="web" value="https://www.imdb.com/chart/top/?ref_=nv_mv_250" style="pointer-events: none;" alt="enter web address">
+  </form>
 
   <div id="display">
     <h4>Design Toolbar</h4>
@@ -34,12 +35,16 @@
         </select>
       </div>
       <div>
-        <label for="fontColor" alt="Font Color Picker">Font Color</label>
-        <input type="color" id="color" name="color" alt="Font Color Picker" onchange="fontColor()">
+        <form>
+          <label for="fontColor" alt="Font Color Picker">Font Color</label>
+          <input type="color" id="color" name="color" alt="Font Color Picker" onchange="fontColor()">
+        </form>
       </div>
       <div>
-        <label for="fill" alt="Fill Color Picker">Fill Color</label>
-        <input type="color" id="fill" name="fill" onchange="fill()">
+        <form>
+          <label for="fill" alt="Fill Color Picker">Fill Color</label>
+          <input type="color" id="fill" name="fill" onchange="fill()">
+        </form>
       </div>
       <div>
         <label for="style" alt="text style dropdown">Text Style</label>

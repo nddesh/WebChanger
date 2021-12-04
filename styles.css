@@ -91,6 +91,11 @@ iframe {
   flex-direction: column;
 }
 
+#toolbar div form {
+  display: flex;
+  flex-direction: column;
+}
+
 h4 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -141,3 +146,4 @@ button {
   margin: 20px auto 0 auto;
   text-align: center;
 }
+
