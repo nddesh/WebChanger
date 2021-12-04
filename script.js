@@ -20,23 +20,29 @@ page2.style.fontFamily = localStorage.getItem("font");
 page3.style.fontFamily = localStorage.getItem("font");
 page4.style.fontFamily = localStorage.getItem("font");
 
+//Change font colors
 page.style.color = localStorage.getItem("fColor");
 page2.style.color = localStorage.getItem("fColor");
 page3.style.color = localStorage.getItem("fColor");
 page4.style.color = localStorage.getItem("fColor");
 
+//Change page background color
 page.style.backgroundColor = localStorage.getItem("fill");
 
+//change font weights
 page.style.fontWeight = localStorage.getItem("style");
 page2.style.fontWeight = localStorage.getItem("style");
 page3.style.fontWeight = localStorage.getItem("style");
 page4.style.fontWeight = localStorage.getItem("style");
 
+//change text decoration
 page.style.textDecoration = localStorage.getItem("decor");
 page2.style.textDecoration = localStorage.getItem("decor");
 page3.style.textDecoration = localStorage.getItem("decor");
 page4.style.textDecoration = localStorage.getItem("decor");
 
+
+//functions to update localStorage with user's selections
 function font() {
     console.log(localStorage.getItem("font"));
     localStorage.setItem("font", document.getElementById("font").value);
