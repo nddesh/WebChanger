@@ -107,6 +107,10 @@ label {
   text-align: center;
 }
 
+hr {
+  margin-bottom: 30px;
+}
+
 input[type=color] {
   width: 100px;
   height: 50px;
@@ -117,6 +121,7 @@ input[type=text] {
   height: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(0, 0, 218);
+  margin-top: 10px;
 }
 
 #design {
