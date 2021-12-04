@@ -1,11 +1,12 @@
+//specify elements/sections from the iframe pages
 var page = document.querySelector("#main");
 var page2 = document.querySelector(".article h3");
 var page3 = document.querySelector(".article h1");
 var page4 = document.querySelector("div .byline");
-// var frame = document.getElementById("yourDesign");
 
+//set all values to nothing on page load
 function init() {
-    localStorage.clear();
+    window.onbeforeunload = function (e) { localStorage. clear(); }
     localStorage.setItem("font", '');
     localStorage.setItem("fColor", '');
     localStorage.setItem("fill", '');
@@ -13,7 +14,7 @@ function init() {
     localStorage.setItem("style", '');
 }
 
-//Change page decorations
+//Change page font
 page.style.fontFamily = localStorage.getItem("font");
 page2.style.fontFamily = localStorage.getItem("font");
 page3.style.fontFamily = localStorage.getItem("font");

@@ -40,6 +40,7 @@ h2 {
   font-size: 1.5em;
   margin-bottom: 15px;
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 h3 {
@@ -51,6 +52,7 @@ h3 {
 p {
   font-size: 0.8em;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 section {
@@ -66,7 +68,9 @@ input {
 
 iframe {
   border: 1px solid #cccccc;
-  margin: 10px auto;
+  margin: 10px;
+  width: 50vw;
+  max-width: 600px;
 }
 
 #toolbar {
